@@ -1,7 +1,10 @@
+console.log("********step1********");
 function personalDetails(){
     console.log("firstName: yogesh","lastName:chandramadne","collage:stbcoe" );
 }
 personalDetails();
+console.log("*************step2************");
+
 function swapValuesDude(num1,num2) {
     console.log("values before swapping:",num1,num2);
     var temp = num1;
@@ -11,6 +14,7 @@ function swapValuesDude(num1,num2) {
 }
 swapValuesDude(500,1000);
 swapValuesDude( "viraat","Anushka");
+console.log("************step3***********");
 
 function addThreeValues(num1,num2,num3) {
     var result = num1+num2+num3;
@@ -19,6 +23,6 @@ function addThreeValues(num1,num2,num3) {
     
 }
 addThreeValues(10.23,600,40);
-addThreeValues("Hello","Good","morning")
+addThreeValues("Hello  ","Good   ","Morning   ")
 
 
