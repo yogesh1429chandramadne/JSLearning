@@ -29,7 +29,7 @@ function tool(language) {
 }
 var result =tool("javascript") 
 console.log(result)
-var result = tool("Deveoper")
+var result = tool("Developer")
 console.log(result);
 var result = tool("Google Chrome")
 console.log(result);
