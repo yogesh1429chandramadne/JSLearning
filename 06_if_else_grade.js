@@ -1,16 +1,18 @@
 console.log(`***********Step 1***********`);
 
-
+var age =18;
 function voteEligibility(age) {
     var ageForVote = age;
-    if (age>=18||age>=120) {console.log(` Given age is ${age} -Hey You are Eligible For Voting`);
+    if (age>=18) {console.log(` Given age is ${age} -Hey You are Eligible For Voting`);
         
-}else{console.log(`Given Age is ${age} hey you are not eligibe for voting`);}
-
-    
-if (age=0||age<0||age>=120||age==undefined||age==null) {console.log(` Given age is ${age} Data Is invalid`);
+} else if (age<=0||age>=120||age==undefined||age!=null||isNaN==age) {console.log(` Given Age IS ${age} Data Is invalid`);
 }
     
+
+else{console.log(`Given Age is ${age} hey you are not eligibe for voting`);}
+
+    
+
     
     
     
@@ -25,6 +27,7 @@ voteEligibility(200);
 voteEligibility(0);
 voteEligibility(undefined);
 voteEligibility(null);
+voteEligibility(NaN);
 console.log(`************step 2 *******************`);
 function gradeCaculation(marks) {
     if (marks <= 0 || marks > 100 || typeof marks != "number" || marks== undefined||marks==NaN||marks==null) {
