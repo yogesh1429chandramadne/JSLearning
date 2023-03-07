@@ -1,21 +1,22 @@
 console.log(`***********Step 1***********`);
 
-var age =18;
+;
 function voteEligibility(age) {
-    var ageForVote = age;
-    if (age>=18) {console.log(` Given age is ${age} -Hey You are Eligible For Voting`);
-        
-} else if (age<=0||age>=120||age==undefined||age!=null||isNaN==age) {console.log(` Given Age IS ${age} Data Is invalid`);
-}
-    
-
-else{console.log(`Given Age is ${age} hey you are not eligibe for voting`);}
-
-    
-
-    
-    
-    
+    if (
+        age <= 0 ||
+        age >= 120||
+        age == undefined ||
+        age != null ||
+        isNaN == age
+      ) {
+        console.log(` Given Age IS ${age} Data Is invalid`);
+  var ageForVote = age;
+  if (age >= 18) {
+    console.log(` Given age is ${age} -Hey You are Eligible For Voting`);
+  }  
+  } else {
+    console.log(`Given Age is ${age} hey you are not eligibe for voting`);
+  }
 }
 
 voteEligibility(45);
@@ -30,17 +31,28 @@ voteEligibility(null);
 voteEligibility(NaN);
 console.log(`************step 2 *******************`);
 function gradeCaculation(marks) {
-    if (marks <= 0 || marks > 100 || typeof marks != "number" || marks== undefined||marks==NaN||marks==null) {
-        console.log(`please provide the valid marks - ${marks} `);
-}
-if (marks>=90) {console.log(`fantastic marks: ${marks} your Grade is A+`);
-
-}
-if (marks>=75&&marks<=90) {console.log(`Excellent marks: ${marks} your grade is A `);}
-if (marks>=50&&marks<=75) {console.log(`Good Marks :${marks} your grade is B `);}
-if (marks>=35&&marks<=50) {console.log(`marks is :${marks}your grade is C,Need improvement `);}
-
-    
+  if (
+    marks <= 0 ||
+    marks > 100 ||
+    typeof marks != "number" ||
+    marks == undefined ||
+    marks == NaN ||
+    marks == null
+  ) {
+    console.log(`please provide the valid marks - ${marks} `);
+  }
+  if (marks >= 90) {
+    console.log(`fantastic marks: ${marks} your Grade is A+`);
+  }
+  if (marks >= 75 && marks <= 90) {
+    console.log(`Excellent marks: ${marks} your grade is A `);
+  }
+  if (marks >= 50 && marks <= 75) {
+    console.log(`Good Marks :${marks} your grade is B `);
+  }
+  if (marks >= 35 && marks <= 50) {
+    console.log(`marks is :${marks}your grade is C,Need improvement `);
+  }
 }
 gradeCaculation(98);
 gradeCaculation(80);
@@ -50,7 +62,7 @@ gradeCaculation(0);
 gradeCaculation(150);
 gradeCaculation(-7);
 gradeCaculation("91");
-gradeCaculation("seventy one")
+gradeCaculation("seventy one");
 gradeCaculation(NaN);
 gradeCaculation(undefined);
-gradeCaculation(null)
+gradeCaculation(null);
