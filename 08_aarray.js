@@ -65,4 +65,12 @@ arrayOfNumbers.splice(2,1,50,60)
 console.log(arrayOfNumbers);
 arrayOfNumbers.splice(2);
 console.log(arrayOfNumbers);
+//traversing in array
+var arrayOfNumbers = [10,20,25,15,30,5,40,45];
+for (let index = 0; index < arrayOfNumbers.length; index++) {
+    const element = arrayOfNumbers[index];
+    console.log(element);
+    
+    
+}
 
