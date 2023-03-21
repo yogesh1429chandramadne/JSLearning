@@ -4,7 +4,7 @@ function greaterNumber(num1,num2) {
     console.log(result);
     
 }
-console.log("Greater No. between 10,-10 Is");
+console.log(`Greater No. between 10,-10 Is`);
 greaterNumber(10,-10);
 console.log("Greater No. between 800,899 Is");
 greaterNumber(800,899);

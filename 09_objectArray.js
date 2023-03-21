@@ -32,10 +32,10 @@ const hdfcBank= {
 }
 const arrayOfBanks = [sbiBank ,yesBank ,hdfcBank ,axisBank];
 
-for (let index = 0; index < arrayOfBanks.length; index++) {
-    const element = arrayOfBanks[index];
-    console.log(`${element.bankName},${element.location},${element.IFSC},${element.interestRate}`);
-}
+// for(let index = 0; index < arrayOfBanks.length; index++) {
+//     const element = arrayOfBanks[index];
+//     console.log(`${element.bankName},${element.location},${element.IFSC},${element.interestRate}`);
+// }
 for (const element of arrayOfBanks) {
     console.log(`${element.bankName},${element.location},${element.IFSC},${element.interestRate}`);
 

@@ -28,14 +28,13 @@ const rateOfInterest = {
     dueInterest:3
 }
 console.log(`===================================  After Merging step 1,step2 & step 4 ============================================================`);
-const sbiDetails={ bankSbi,bankLocation,rateOfInterest}
+const sbiDetails={};
+Object.assign(sbiDetails,bankSbi,bankLocation,rateOfInterest)
     console.table(sbiDetails);
 
-for (let index = 0; index <sbiDetails.length; index++) {
-    const element =sbiDetails[index];
-    console.log(element.bankSbi);
+for (const element of sbiDetails) {
+    const element= sbiDetails;
+    console.log(element.bankName);
 }
-
-
 
 

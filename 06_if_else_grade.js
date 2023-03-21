@@ -1,22 +1,25 @@
 console.log(`***********Step 1***********`);
 
 function voteEligibility(age) {
-  if (
+ 
+    if (age >= 18) {
+      console.log(` Given age is ${age} -Hey You are Eligible For Voting`);
+  }if ( 
     age <= 0 ||
     age >= 120 ||
     age == undefined ||
     age != null ||
     isNaN == age
   ) {
-    console.log(` Given Age IS ${age} Data Is invalid`);
-    if (age >= 18) {
-      console.log(` Given age is ${age} -Hey You are Eligible For Voting`);
-  }else {
+    console.log(` Given Age IS ${age} Data Is invalid`);}
+  
+  
+  else {
     var ageForVote = age;
     console.log(`Given Age is ${age} hey you are not eligibe for voting`);
   }
   
-  }
+  
 
   return age;
 }
